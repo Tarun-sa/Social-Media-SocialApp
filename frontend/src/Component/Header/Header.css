@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header > a{
+    width: 2vmax;
+    height: 2vmax;
+    margin: 1vmax 4vmax;
+}
+.header >a >svg{
+font-size: 2vmax;
+transition: all 0.5s;
+color: rgba(0, 0, 0, 0.445);
+}
+.header>a>svg:hover{
+    transform: scale(1.2);
+    color: black;
+}
+
+@media screen  and (max-width:600px){
+    .header>a{
+        width: 8vw;
+        height: 8vh;
+    }
+    .header>a>svg{
+        font-size: 8vw;
+    }
+}
